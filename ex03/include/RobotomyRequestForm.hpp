@@ -6,7 +6,7 @@
 /*   By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 16:23:15 by calleaum          #+#    #+#             */
-/*   Updated: 2025/08/27 09:15:58 by calleaum         ###   ########.fr       */
+/*   Updated: 2025/08/28 10:24:34 by calleaum         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <cstdlib>
 #include "AForm.hpp"
 
-#define RR_FORM_NAME    "Robotomy Request"
+#define RR_NAME    "Robotomy Request"
 
 class RobotomyRequestForm: public AForm
 {

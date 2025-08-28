@@ -6,7 +6,7 @@
 /*   By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 15:38:46 by calleaum          #+#    #+#             */
-/*   Updated: 2025/08/27 15:42:45 by calleaum         ###   ########.fr       */
+/*   Updated: 2025/08/28 10:26:07 by calleaum         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,9 @@ static AForm    *createPardon(const std::string &target)
 AForm   *Intern::makeForm(const std::string &name, const std::string &target)
 {
 	const FormMap forms[] = {
-		{SC_FORM_NAME, createShrubbery},
-		{RR_FORM_NAME, createRobotomy},
-		{PP_FORM_NAME, createPardon},
+		{SC_NAME, createShrubbery},
+		{RR_NAME, createRobotomy},
+		{PP_NAME, createPardon},
         {NULL, NULL}
 	};
 

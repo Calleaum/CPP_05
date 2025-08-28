@@ -6,7 +6,7 @@
 /*   By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 16:23:19 by calleaum          #+#    #+#             */
-/*   Updated: 2025/08/27 09:16:02 by calleaum         ###   ########.fr       */
+/*   Updated: 2025/08/28 10:25:16 by calleaum         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@
 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡴⠒⢋⣁⡀⠀⠀⠀⠀⠀⠘⠢⢄⣀⠀⠀⠀⠀⠀⠀⠀⠀\n" \
 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠁⠉⠙⠒⠤⣘⣗⠒⠒⠒⠚⠛⠃⠀⠀⠀⠀⠀⠀"
 
-#define SC_FORM_NAME    "Shrubbery Creation"
+#define SC_NAME    "Shrubbery Creation"
 
 class ShrubberyCreationForm: public AForm
 {

@@ -6,11 +6,11 @@
 #    By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/07 08:37:36 by calleaum          #+#    #+#              #
-#    Updated: 2025/08/27 15:45:06 by calleaum         ###   ########.fr        #
+#    Updated: 2025/08/28 11:12:01 by calleaum         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME    = Form
+NAME    = Intern
 
 CXX     = c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98 -Iinclude

@@ -6,7 +6,7 @@
 /*   By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 16:23:26 by calleaum          #+#    #+#             */
-/*   Updated: 2025/08/27 15:03:30 by calleaum         ###   ########.fr       */
+/*   Updated: 2025/08/28 11:20:38 by calleaum         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,72 +19,72 @@
 
 int main()
 {
-	std::cout << "\n--- Testing ShrubberyCreationForm ---" << std::endl;
+	std::cout << "\n*-* Testing ShrubberyCreationForm *-*" << std::endl;
 	try
 	{
-		Bureaucrat gardener("Gardener", 130); // can sign & execute
-		ShrubberyCreationForm shrub("home");
+		Bureaucrat Oui("Oui", 130); // can sign & execute
+		ShrubberyCreationForm shrub("yes");
 
-		gardener.signForm(shrub);
-		gardener.executeForm(shrub);
+		Oui.signForm(shrub);
+		Oui.executeForm(shrub);
 	}
 	catch (const std::exception &e)
 	{
-		std::cerr << "❌ Error: " << e.what() << std::endl;
+		std::cerr << " Error: " << e.what() << std::endl;
 	}
 
-	std::cout << "\n--- Testing RobotomyRequestForm ---" << std::endl;
+	std::cout << "\n*-* Testing RobotomyRequestForm *-*" << std::endl;
 	try
 	{
-		Bureaucrat technician("Technician", 45);// just enough to sign and execute
-		RobotomyRequestForm robot("Bender");
+		Bureaucrat Aguy("A guy", 45);
+		RobotomyRequestForm robot("OUI");
 
-		technician.signForm(robot);
+		Aguy.signForm(robot);
 		for (int i = 0; i < 3; ++i)
-			technician.executeForm(robot);
+			Aguy.executeForm(robot);
 	} catch (const std::exception &e)
 	{
-		std::cerr << "❌ Error: " << e.what() << std::endl;
+		std::cerr << " Error: " << e.what() << std::endl;
 	}
 
-	std::cout << "\n--- Testing PresidentialPardonForm ---" << std::endl;
+	std::cout << "\n*-* Testing PresidentialPardonForm *-*" << std::endl;
 	try
 	{
-		Bureaucrat president("President", 1); // very high grade
-		PresidentialPardonForm pardon("Ford Prefect");
+		Bureaucrat Random("Random", 1);
+		PresidentialPardonForm pardon("Guy");
 
-		president.signForm(pardon);
-		president.executeForm(pardon);
+		Random.signForm(pardon);
+		Random.executeForm(pardon);
 	}
 	catch (const std::exception &e)
 	{
-		std::cerr << "❌ Error: " << e.what() << std::endl;
+		std::cerr << " Error: " << e.what() << std::endl;
 	}
 
-	std::cout << "\n--- Testing form not signed ---" << std::endl;
+	std::cout << "\n*-* Testing form not signed *-*" << std::endl;
 	try
 	{
-		Bureaucrat junior("Junior", 1);
+		Bureaucrat NON("NON", 1);
 		PresidentialPardonForm unsignedForm("Nobody");
-		junior.executeForm(unsignedForm); // not signed!
+		NON.executeForm(unsignedForm);
 	}
 	catch (const std::exception &e)
 	{
-		std::cerr << "❌ Error: " << e.what() << std::endl;
+		std::cerr << " Error: " << e.what() << std::endl;
 	}
 
-	std::cout << "\n--- Testing insufficient execution grade ---" << std::endl;
+	std::cout << "\n*-* Testing insufficient execution grade *-*" << std::endl;
 	try
 	{
-		Bureaucrat intern("Intern", 150);
-		ShrubberyCreationForm shrub("office");
+		Bureaucrat Head("Head", 150);
+		ShrubberyCreationForm shrub("bang");
 
-		intern.signForm(shrub);       // allowed
-		intern.executeForm(shrub);    // should fail
+		Head.signForm(shrub);       // allowed
+		Head.executeForm(shrub);    // should fail
 	}
 	catch (const std::exception &e)
 	{
-		std::cerr << "❌ Error: " << e.what() << std::endl;
+		std::cerr << " Error: " << e.what() << std::endl;
 	}
 
 	return 0;

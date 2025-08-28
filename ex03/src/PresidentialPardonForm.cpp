@@ -6,13 +6,13 @@
 /*   By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 16:23:29 by calleaum          #+#    #+#             */
-/*   Updated: 2025/08/27 14:22:36 by calleaum         ###   ########.fr       */
+/*   Updated: 2025/08/28 10:30:23 by calleaum         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PresidentialPardonForm.hpp"
 
-PresidentialPardonForm::PresidentialPardonForm(const std::string &target):  AForm(PP_FORM_NAME, 25, 5), _target(target) {}
+PresidentialPardonForm::PresidentialPardonForm(const std::string &target):  AForm(PP_NAME, 25, 5), _target(target) {}
 
 PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &other):    AForm(other), _target(other._target) {}
 
@@ -28,5 +28,5 @@ PresidentialPardonForm  &PresidentialPardonForm::operator=(const PresidentialPar
 
 void    PresidentialPardonForm::doAction() const
 {
-    std::cout << this->_target << " has been pardoned by Zaphod Beeblebrox" << std::endl;
+    std::cout << this->_target << " has been pardoned by the President" << std::endl;
 }

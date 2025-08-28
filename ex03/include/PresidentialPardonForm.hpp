@@ -6,7 +6,7 @@
 /*   By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 16:23:13 by calleaum          #+#    #+#             */
-/*   Updated: 2025/08/27 09:15:55 by calleaum         ###   ########.fr       */
+/*   Updated: 2025/08/28 10:24:29 by calleaum         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include "AForm.hpp"
 
-#define PP_FORM_NAME    "Presidential Pardon"
+#define PP_NAME    "Presidential Pardon"
 
 class PresidentialPardonForm : public AForm
 {

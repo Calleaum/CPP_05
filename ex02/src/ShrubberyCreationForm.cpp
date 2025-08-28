@@ -6,13 +6,13 @@
 /*   By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 16:23:34 by calleaum          #+#    #+#             */
-/*   Updated: 2025/08/27 14:22:45 by calleaum         ###   ########.fr       */
+/*   Updated: 2025/08/28 10:41:28 by calleaum         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ShrubberyCreationForm.hpp"
 
-ShrubberyCreationForm::ShrubberyCreationForm(const std::string &target):    AForm(SC_FORM_NAME, 145, 137), _target(target)
+ShrubberyCreationForm::ShrubberyCreationForm(const std::string &target):    AForm(SC_NAME, 145, 137), _target(target)
 {}
 
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &other):   AForm(other), _target(other._target)
